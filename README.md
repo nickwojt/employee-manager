@@ -5,6 +5,8 @@
 This project is a Command line application built using NODE.JS, inquirer, console.table, and mysql2. The program helps to view, add to, and update a database of employees. 
 
 
+LINK TO WALKTHROUGH VIDEO: https://drive.google.com/file/d/1wyNMFy5Jqly5R15Lnd_p9nOyUTungc50/view
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
