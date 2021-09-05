@@ -1,7 +1,6 @@
 const inquirer = require("inquirer");
 const main = require("./lib/questions");
 const cTable = require("console.table");
-// const Database = require("./src/queries");
 const dbConnection = require("./config/connection");
 
 const displayMenu = () => {
@@ -229,44 +228,3 @@ async function updateAnEmployee() {
     });
   });
 }
-
-// const AllDepartments = () => {
-//   Database.viewAllDepartments().then((data) => {
-//     console.table(data[0]);
-//     displayMenu();
-//   });
-// };
-
-// const AllRoles = () => {
-//   Database.viewAllRoles().then((data) => {
-//     console.table(data[0]);
-//     displayMenu();
-//   });
-// };
-// const AllEmployees = () => {
-//   Database.viewAllEmployees().then((data) => {
-//     console.table(data[0]);
-//     displayMenu();
-//   });
-// };
-// const addDepartment = () => {
-//   Database.addADepartment().then(() => {
-//     console.log("Department added successfully");
-//     displayMenu();
-//   });
-// };
-// const addRole = () => {
-//   Database.addARole();
-// };
-// const addEmployee = () => {
-//   Database.addAnEmployee().then(() => {
-//     console.log("Employee added successfully");
-//     displayMenu();
-//   });
-// };
-// const updateEmployee = () => {
-//   Database.updateAnEmployee().then(() => {
-//     console.log("Employee updated successfully");
-//     displayMenu();
-//   });
-// };
