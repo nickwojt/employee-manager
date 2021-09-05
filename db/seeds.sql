@@ -1,7 +1,29 @@
 INSERT INTO
-  employee (first_name, last_name, manager_id)
+  department (name)
 VALUES
-  ("John", "Smith", 1),
-  ("Ben", "Smith", 1),
-  ("Zach", "Smith", 1),
-  ("Matt", "Smith", 1),
+  ("Sales"),
+  ("Engineering"),
+  ("Finance"),
+  ("Legal");
+INSERT INTO
+  role (title, salary, department_id)
+VALUES
+  ("Sales Lead", 100000, 1),
+  ("Salesperson", 80000, 1),
+  ("Lead Engineer", 150000, 2),
+  ("Software Engineer", 120000, 2),
+  ("Account Manager", 160000, 3),
+  ("Accountant", 125000, 3),
+  ("Legal Team Lead", 250000, 4),
+  ("Lawyer", 190000, 4);
+INSERT INTO
+  employee (first_name, last_name, role_id, manager_id)
+VALUES
+  ("Dave", "Thomas", 1, null),
+  ("Wendy", "Thomas", 2, 1),
+  ("Sundar", "Pichai", 3, null),
+  ("Matt", "Bush", 4, 3),
+  ("Chad", "Bradley", 5, null),
+  ("Kevin", "Malone", 6, 5),
+  ("Karen", "Johnson", 7, null),
+  ("Abraham", "Lincoln", 8, 7);
